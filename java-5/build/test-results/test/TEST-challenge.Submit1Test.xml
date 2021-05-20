@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="challenge.Submit1Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-20T22:09:17" hostname="leticia-Aspire-E5-573G" time="0.105">
+  <properties/>
+  <testcase name="getQuoteByActor" classname="challenge.Submit1Test" time="0.094"/>
+  <testcase name="getQuote" classname="challenge.Submit1Test" time="0.006"/>
+  <system-out><![CDATA[2021-04-20 19:09:17.073  INFO 14350 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [challenge.Submit1Test], using SpringBootContextLoader
+2021-04-20 19:09:17.075  INFO 14350 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [challenge.Submit1Test]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-20 19:09:17.076  INFO 14350 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [challenge.Submit1Test]: Submit1Test does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-20 19:09:17.097  INFO 14350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration challenge.Application for test class challenge.Submit1Test
+2021-04-20 19:09:17.098  INFO 14350 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-04-20 19:09:17.099  INFO 14350 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1de969e1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2009f054, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@642d97d4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@e68d5a9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@581813e4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@37fcd3e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f6761ff, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77ea2e27, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6f75840d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e4731cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3aabd765, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c965d01]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.3.RELEASE)
+
+2021-04-20 19:09:17.137  INFO 14350 --- [    Test worker] challenge.Submit1Test                    : Starting Submit1Test on leticia-Aspire-E5-573G with PID 14350 (started by leticia in /home/leticia/codenation/java-5)
+2021-04-20 19:09:17.139  INFO 14350 --- [    Test worker] challenge.Submit1Test                    : No active profile set, falling back to default profiles: default
+2021-04-20 19:09:17.142  INFO 14350 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@c512796: startup date [Tue Apr 20 19:09:17 BRT 2021]; root of context hierarchy
+2021-04-20 19:09:17.657  INFO 14350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-20 19:09:17.742  INFO 14350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@c512796: startup date [Tue Apr 20 19:09:17 BRT 2021]; root of context hierarchy
+2021-04-20 19:09:17.753  INFO 14350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/quote],methods=[GET]}" onto public org.springframework.http.ResponseEntity<challenge.QuoteDTO> challenge.QuoteController.getQuote()
+2021-04-20 19:09:17.754  INFO 14350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/quote/{actor}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<challenge.QuoteDTO> challenge.QuoteController.getQuoteByActor(java.lang.String)
+2021-04-20 19:09:17.756  INFO 14350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-20 19:09:17.757  INFO 14350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-20 19:09:17.771  INFO 14350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-20 19:09:17.771  INFO 14350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-04-20 19:09:17.839  INFO 14350 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2021-04-20 19:09:17.840  INFO 14350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2021-04-20 19:09:17.843  INFO 14350 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2021-04-20 19:09:17.863  INFO 14350 --- [    Test worker] challenge.Submit1Test                    : Started Submit1Test in 0.755 seconds (JVM running for 9.907)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
